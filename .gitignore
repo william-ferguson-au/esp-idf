@@ -12,7 +12,7 @@ GPATH
 
 # emacs temp file suffixes
 *~
-.#*
+.#*a
 \#*#
 
 # eclipse setting
@@ -88,3 +88,4 @@ build
 
 # lock files for examples and components
 dependencies.lock
+/run_clion.bat
