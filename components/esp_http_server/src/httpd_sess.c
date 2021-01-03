@@ -298,7 +298,7 @@ bool httpd_sess_pending(struct httpd_data *hd, int fd)
 esp_err_t httpd_sess_process(struct httpd_data *hd, int newfd)
 {
     struct sock_db *sd = httpd_sess_get(hd, newfd);
-    ESP_LOGD(TAG, LOG_FMT("sd = %llu"), (uint64_t) sd);
+    ESP_LOGD(TAG, LOG_FMT("sd = %i"), (intptr_t) sd);
     if (! sd) {
         return ESP_FAIL;
     }
